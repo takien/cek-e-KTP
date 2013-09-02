@@ -1,0 +1,931 @@
+<!DOCTYPE HTML>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8">
+	<title>Cek Data e-KTP Online</title>
+	<meta name="description" content="Apakah Data e-KTP Anda sudah terdaftar? Cek data e-KTP Online di sini, gratis." />
+	<meta property="og:title" content="Cek Data e-KTP Online" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://ektp.cektkp.com" />
+	<meta property="og:image" content="http://ektp.cektkp.com/images/ektpbg.jpg" />
+    <link rel="stylesheet" href="stylesheets/base.css">
+	
+	<style type="text/css">
+		#footer {
+			height:100px;
+			padding-top:50px;
+			text-align:center;
+		}
+		.quick-links {
+		  min-height: 30px;
+		  margin: 30px 0 0 0;
+		  padding: 5px 20px;
+		  list-style: none;
+		  text-align: center;
+		  overflow: hidden;
+		}
+		.quick-links:first-child {
+		  min-height: 0;
+		}
+		.quick-links li {
+		  display: inline;
+		  margin: 0 8px;
+		  color: #999;
+		}
+		.quick-links .github-btn,
+		.quick-links .tweet-btn,
+		.quick-links .follow-btn,
+		.quick-links .gplus-btn,
+		.quick-links .fb-btn {
+		  position: relative;
+		  top: 5px;
+		}
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/base64.js"></script>
+	<script type="text/javascript">
+	function URLToArray(url) {
+	  var request = {};
+	  var pairs = url.substring(url.indexOf('?') + 1).split('&');
+	  for (var i = 0; i < pairs.length; i++) {
+		var pair = pairs[i].split('=');
+		request[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]).replace(/\+/g,' ');;
+	  }
+	  return request;
+	}
+	function str_shuffle(string) {
+		var parts = string.split('');
+		for (var i = parts.length; i > 0;) {
+			var random = parseInt(Math.random() * i);
+			var temp = parts[--i];
+			parts[i] = parts[random];
+			parts[random] = temp;
+		}
+		return parts.join('');
+	}
+	/* google analitic*/
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18589454-6']);
+	  _gaq.push(['_setDomainName', '.cektkp.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+</script>
+  </head>
+  <body>
+	<div class="container">
+	<div>
+			<h1 style="margin-top: 40px"><a href="index.html">e-KTP Online</a></h1>
+			<h5>Cek data e-KTP Anda secara online</h5>
+			<hr />
+	</div>
+<!--ads top-->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3108107609212063";
+/* cektkp-ektp-top */
+google_ad_slot = "1485296174";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		<div id="form-wrap">
+			<div class="container">
+				<div class="eight columns">
+					<form action="" id="form" method="post">
+					<!-- Label and text input -->
+					<label for="nama">Nama</label>
+					<input type="text" id="nama" name="nama" required="required" />
+				
+					<label for="jk">Jenis Kelamin</label>
+					<select id="jk" name="jk">
+					<option value="Laki-laki">Laki-laki</option>
+					<option value="Perempuan">Perempuan</option>
+					</select>
+					
+					
+					<label for="provinsi">Provinsi</label>
+					<select id="provinsi" name="provinsi" required="required">
+						<option value="" data-prov="prov">--Pilih Provinsi--</option>
+						<option data-prov="prov1" value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
+						<option data-prov="prov2" value="Sumatera Utara">Sumatera Utara</option>
+						<option data-prov="prov3" value="Sumatera Barat">Sumatera Barat</option>
+						<option data-prov="prov4" value="Riau">Riau</option>
+						<option data-prov="prov5" value="Jambi">Jambi</option>
+						<option data-prov="prov6" value="Sumatera Selatan">Sumatera Selatan</option>
+						<option data-prov="prov7" value="Bengkulu">Bengkulu</option>
+						<option data-prov="prov8" value="Lampung">Lampung</option>
+						<option data-prov="prov9" value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+						<option data-prov="prov10" value="Kepulauan Riau">Kepulauan Riau</option>
+						<option data-prov="prov11" value="DKI Jakarta">DKI Jakarta</option>
+						<option data-prov="prov12" value="Jawa Barat">Jawa Barat</option>
+						
+						<option data-prov="prov13" value="Jawa Tengah">Jawa Tengah</option>
+						<option data-prov="prov14" value="Daerah Istimewa Yogyakarta">Daerah Istimewa Yogyakarta</option>
+						<option data-prov="prov15" value="Jawa Timur">Jawa Timur</option>
+						<option data-prov="prov16" value="Banten">Banten</option>
+						<option data-prov="prov17" value="Bali">Bali</option>
+						<option data-prov="prov18" value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+						<option data-prov="prov19" value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+						
+						<option data-prov="prov20" value="Kalimantan Barat">Kalimantan Barat</option>
+						
+						
+						<option data-prov="prov21" value="Kalimantan Tengah">Kalimantan Tengah</option>
+						<option data-prov="prov22" value="Kalimantan Selatan">Kalimantan Selatan</option>
+						<option data-prov="prov23" value="Kalimantan Timur">Kalimantan Timur</option>
+						
+						<option data-prov="prov34" value="Kalimantan Utara">Kalimantan Utara</option>
+						
+						<option data-prov="prov24" value="Sulawasi Utara">Sulawasi Utara</option>
+						
+						<option data-prov="prov25" value="Sulawesi Tengah">Sulawesi Tengah</option>
+						<option data-prov="prov26" value="Sulawesi Selatan">Sulawesi Selatan</option>
+						<option data-prov="prov27" value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+						<option data-prov="prov28" value="Gorontalo">Gorontalo</option>
+						<option data-prov="prov29" value="Sulawesi Barat">Sulawesi Barat</option>
+						<option data-prov="prov30" value="Maluku">Maluku</option>
+						<option data-prov="prov31" value="Maluku Utara">Maluku Utara</option>
+						<option data-prov="prov32" value="Papua">Papua</option>
+						<option data-prov="prov33" value="Papua Barat">Papua Barat</option>
+						
+						
+					</select>
+					 
+					<label for="kotakab">Kota/Kabupaten</label>
+					<select name="kotakab" id="kotakab">
+						<option class="default" value="">--Pilih Kota/Kabupaten--</option>
+						<option value="Kabupaten Aceh Barat" class="prov1">Kabupaten Aceh Barat</option>
+						<option value="Kabupaten Aceh Barat Daya" class="prov1">Kabupaten Aceh Barat Daya</option>
+						<option value="Kabupaten Aceh Besar" class="prov1">Kabupaten Aceh Besar</option>
+						<option value="Kabupaten Aceh Jaya" class="prov1">Kabupaten Aceh Jaya</option>
+						<option value="Kabupaten Aceh Selatan" class="prov1">Kabupaten Aceh Selatan</option>
+						<option value="Kabupaten Aceh Singkil" class="prov1">Kabupaten Aceh Singkil</option>
+						<option value="Kabupaten Aceh Tamiang" class="prov1">Kabupaten Aceh Tamiang</option>
+						<option value="Kabupaten Aceh Tengah" class="prov1">Kabupaten Aceh Tengah</option>
+						<option value="Kabupaten Aceh Tenggara" class="prov1">Kabupaten Aceh Tenggara</option>
+						<option value="Kabupaten Aceh Timur" class="prov1">Kabupaten Aceh Timur</option>
+						<option value="Kabupaten Aceh Utara" class="prov1">Kabupaten Aceh Utara</option>
+						<option value="Kabupaten Bener Meriah" class="prov1">Kabupaten Bener Meriah</option>
+						<option value="Kabupaten Bireuen" class="prov1">Kabupaten Bireuen</option>
+						<option value="Kabupaten Gayo Lues" class="prov1">Kabupaten Gayo Lues</option>
+						<option value="Kabupaten Nagan Raya" class="prov1">Kabupaten Nagan Raya</option>
+						<option value="Kabupaten Pidie" class="prov1">Kabupaten Pidie</option>
+						<option value="Kabupaten Pidie Jaya" class="prov1">Kabupaten Pidie Jaya</option>
+						<option value="Kabupaten Simeulue" class="prov1">Kabupaten Simeulue</option>
+						<option value="Banda Aceh" class="prov1">Banda Aceh</option>
+						<option value="Langsa" class="prov1">Langsa</option>
+						<option value="Lhokseumawe" class="prov1">Lhokseumawe</option>
+						<option value="Sabang" class="prov1">Sabang</option>
+						<option value="Subulussalam" class="prov1">Subulussalam</option>
+			
+						<option value="Kabupaten Asahan" class="prov2">Kabupaten Asahan</option>
+						<option value="Kabupaten Batubara" class="prov2">Kabupaten Batubara</option>
+						<option value="Kabupaten Dairi" class="prov2">Kabupaten Dairi</option>
+						<option value="Kabupaten Deli Serdang" class="prov2">Kabupaten Deli Serdang</option>
+						<option value="Kabupaten Humbang Hasundutan" class="prov2">Kabupaten Humbang Hasundutan</option>
+						<option value="Kabupaten Karo" class="prov2">Kabupaten Karo</option>
+						<option value="Kabupaten Labuhanbatu" class="prov2">Kabupaten Labuhanbatu</option>
+						<option value="Kabupaten Labuhanbatu Selatan" class="prov2">Kabupaten Labuhanbatu Selatan</option>
+						<option value="Kabupaten Labuhanbatu Utara" class="prov2">Kabupaten Labuhanbatu Utara</option>
+						<option value="Kabupaten Langkat" class="prov2">Kabupaten Langkat</option>
+						<option value="Kabupaten Mandailing Natal" class="prov2">Kabupaten Mandailing Natal</option>
+						<option value="Kabupaten Nias" class="prov2">Kabupaten Nias</option>
+						<option value="Kabupaten Nias Barat" class="prov2">Kabupaten Nias Barat</option>
+						<option value="Kabupaten Nias Selatan" class="prov2">Kabupaten Nias Selatan</option>
+						<option value="Kabupaten Nias Utara" class="prov2">Kabupaten Nias Utara</option>
+						<option value="Kabupaten Padang Lawas" class="prov2">Kabupaten Padang Lawas</option>
+						<option value="Kabupaten Padang Lawas Utara" class="prov2">Kabupaten Padang Lawas Utara</option>
+						<option value="Kabupaten Pakpak Bharat" class="prov2">Kabupaten Pakpak Bharat</option>
+						<option value="Kabupaten Samosir" class="prov2">Kabupaten Samosir</option>
+						<option value="Kabupaten Serdang Bedagai" class="prov2">Kabupaten Serdang Bedagai</option>
+						<option value="Kabupaten Simalungun" class="prov2">Kabupaten Simalungun</option>
+						<option value="Kabupaten Tapanuli Selatan" class="prov2">Kabupaten Tapanuli Selatan</option>
+						<option value="Kabupaten Tapanuli Tengah" class="prov2">Kabupaten Tapanuli Tengah</option>
+						<option value="Kabupaten Tapanuli Utara" class="prov2">Kabupaten Tapanuli Utara</option>
+						<option value="Kabupaten Toba Samosir" class="prov2">Kabupaten Toba Samosir</option>
+						<option value="Binjai" class="prov2">Binjai</option>
+						<option value="Gunungsitoli" class="prov2">Gunungsitoli</option>
+						<option value="Medan" class="prov2">Medan</option>
+						<option value="Padangsidempuan" class="prov2">Padangsidempuan</option>
+						<option value="Pematangsiantar" class="prov2">Pematangsiantar</option>
+						<option value="Sibolga" class="prov2">Sibolga</option>
+						<option value="Tanjungbalai" class="prov2">Tanjungbalai</option>
+						<option value="Tebing Tinggi" class="prov2">Tebing Tinggi</option>
+			
+						<option value="Kabupaten Agam" class="prov3">Kabupaten Agam</option>
+						<option value="Kabupaten Dharmasraya" class="prov3">Kabupaten Dharmasraya</option>
+						<option value="Kabupaten Kepulauan Mentawai" class="prov3">Kabupaten Kepulauan Mentawai</option>
+						<option value="Kabupaten Lima Puluh Kota" class="prov3">Kabupaten Lima Puluh Kota</option>
+						<option value="Kabupaten Padang Pariaman" class="prov3">Kabupaten Padang Pariaman</option>
+						<option value="Kabupaten Pasaman" class="prov3">Kabupaten Pasaman</option>
+						<option value="Kabupaten Pasaman Barat" class="prov3">Kabupaten Pasaman Barat</option>
+						<option value="Kabupaten Pesisir Selatan" class="prov3">Kabupaten Pesisir Selatan</option>
+						<option value="Kabupaten Sijunjung" class="prov3">Kabupaten Sijunjung</option>
+						<option value="Kabupaten Solok" class="prov3">Kabupaten Solok</option>
+						<option value="Kabupaten Solok Selatan" class="prov3">Kabupaten Solok Selatan</option>
+						<option value="Kabupaten Tanah Datar" class="prov3">Kabupaten Tanah Datar</option>
+						<option value="Bukittinggi" class="prov3">Bukittinggi</option>
+						<option value="Padang" class="prov3">Padang</option>
+						<option value="Padangpanjang" class="prov3">Padangpanjang</option>
+						<option value="Pariaman" class="prov3">Pariaman</option>
+						<option value="Payakumbuh" class="prov3">Payakumbuh</option>
+						<option value="Sawahlunto" class="prov3">Sawahlunto</option>
+						<option value="Solok" class="prov3">Solok</option>
+			
+						<option value="Kabupaten Bengkalis" class="prov4">Kabupaten Bengkalis</option>
+						<option value="Kabupaten Indragiri Hilir" class="prov4">Kabupaten Indragiri Hilir</option>
+						<option value="Kabupaten Indragiri Hulu" class="prov4">Kabupaten Indragiri Hulu</option>
+						<option value="Kabupaten Kampar" class="prov4">Kabupaten Kampar</option>
+						<option value="Kabupaten Kuantan Singingi" class="prov4">Kabupaten Kuantan Singingi</option>
+						<option value="Kabupaten Pelalawan" class="prov4">Kabupaten Pelalawan</option>
+						<option value="Kabupaten Rokan Hilir" class="prov4">Kabupaten Rokan Hilir</option>
+						<option value="Kabupaten Rokan Hulu" class="prov4">Kabupaten Rokan Hulu</option>
+						<option value="Kabupaten Siak" class="prov4">Kabupaten Siak</option>
+						<option value="Kabupaten Kepulauan Meranti" class="prov4">Kabupaten Kepulauan Meranti</option>
+						<option value="Dumai" class="prov4">Dumai</option>
+						<option value="Pekanbaru" class="prov4">Pekanbaru</option>
+			
+						<option value="Kabupaten Batanghari" class="prov5">Kabupaten Batanghari</option>
+						<option value="Kabupaten Bungo" class="prov5">Kabupaten Bungo</option>
+						<option value="Kabupaten Kerinci" class="prov5">Kabupaten Kerinci</option>
+						<option value="Kabupaten Merangin" class="prov5">Kabupaten Merangin</option>
+						<option value="Kabupaten Muaro Jambi" class="prov5">Kabupaten Muaro Jambi</option>
+						<option value="Kabupaten Sarolangun" class="prov5">Kabupaten Sarolangun</option>
+						<option value="Kabupaten Tanjung Jabung Barat" class="prov5">Kabupaten Tanjung Jabung Barat</option>
+						<option value="Kabupaten Tanjung Jabung Timur" class="prov5">Kabupaten Tanjung Jabung Timur</option>
+						<option value="Kabupaten Tebo" class="prov5">Kabupaten Tebo</option>
+						<option value="Jambi" class="prov5">Jambi</option>
+						<option value="Sungai Penuh" class="prov5">Sungai Penuh</option>
+			
+			
+						<option value="Kabupaten Banyuasin" class="prov6">Kabupaten Banyuasin</option>
+						<option value="Kabupaten Empat Lawang" class="prov6">Kabupaten Empat Lawang</option>
+						<option value="Kabupaten Lahat" class="prov6">Kabupaten Lahat</option>
+						<option value="Kabupaten Muara Enim" class="prov6">Kabupaten Muara Enim</option>
+						<option value="Kabupaten Musi Banyuasin" class="prov6">Kabupaten Musi Banyuasin</option>
+						<option value="Kabupaten Musi Rawas" class="prov6">Kabupaten Musi Rawas</option>
+						<option value="Kabupaten Ogan Ilir" class="prov6">Kabupaten Ogan Ilir</option>
+						<option value="Kabupaten Ogan Komering Ilir" class="prov6">Kabupaten Ogan Komering Ilir</option>
+						<option value="Kabupaten Ogan Komering Ulu" class="prov6">Kabupaten Ogan Komering Ulu</option>
+						<option value="Kabupaten Ogan Komering Ulu Selatan" class="prov6">Kabupaten Ogan Komering Ulu Selatan</option>
+						<option value="Kabupaten Ogan Komering Ulu Timur" class="prov6">Kabupaten Ogan Komering Ulu Timur</option>
+						<option value="Lubuklinggau" class="prov6">Lubuklinggau</option>
+						<option value="Pagar Alam" class="prov6">Pagar Alam</option>
+						<option value="Palembang" class="prov6">Palembang</option>
+						<option value="Prabumulih" class="prov6">Prabumulih</option>
+						<option value="Kabupaten Penukal Abab Lematang Ilir" class="prov6">Kabupaten Penukal Abab Lematang Ilir</option>
+			
+						<option value="Kabupaten Bengkulu Selatan" class="prov7">Kabupaten Bengkulu Selatan</option>
+						<option value="Kabupaten Bengkulu Tengah" class="prov7">Kabupaten Bengkulu Tengah</option>
+						<option value="Kabupaten Bengkulu Utara" class="prov7">Kabupaten Bengkulu Utara</option>
+						<option value="Kabupaten Kaur" class="prov7">Kabupaten Kaur</option>
+						<option value="Kabupaten Kepahiang" class="prov7">Kabupaten Kepahiang</option>
+						<option value="Kabupaten Lebong" class="prov7">Kabupaten Lebong</option>
+						<option value="Kabupaten Mukomuko" class="prov7">Kabupaten Mukomuko</option>
+						<option value="Kabupaten Rejang Lebong" class="prov7">Kabupaten Rejang Lebong</option>
+						<option value="Kabupaten Seluma" class="prov7">Kabupaten Seluma</option>
+						<option value="Bengkulu" class="prov7">Bengkulu</option>
+			
+						<option value="Kabupaten Lampung Tengah" class="prov8">Kabupaten Lampung Tengah</option>
+						<option value="Kabupaten Lampung Utara" class="prov8">Kabupaten Lampung Utara</option>
+						<option value="Kabupaten Lampung Selatan" class="prov8">Kabupaten Lampung Selatan</option>
+						<option value="Kabupaten Lampung Barat" class="prov8">Kabupaten Lampung Barat</option>
+						<option value="Kabupaten Tulang Bawang" class="prov8">Kabupaten Tulang Bawang</option>
+						<option value="Kabupaten Tanggamus" class="prov8">Kabupaten Tanggamus</option>
+						<option value="Kabupaten Way Kanan" class="prov8">Kabupaten Way Kanan</option>
+						<option value="Kabupaten Lampung Timur" class="prov8">Kabupaten Lampung Timur</option>
+						<option value="Kabupaten Pesawaran" class="prov8">Kabupaten Pesawaran</option>
+						<option value="Kabupaten Pringsewu" class="prov8">Kabupaten Pringsewu</option>
+						<option value="Kabupaten Mesuji" class="prov8">Kabupaten Mesuji</option>
+						<option value="Kabupaten Tulang Bawang Barat" class="prov8">Kabupaten Tulang Bawang Barat</option>
+						<option value="Kabupaten Pesisir Barat" class="prov8">Kabupaten Pesisir Barat</option>
+						<option value="Bandar Lampung" class="prov8">Bandar Lampung</option>
+						<option value="Metro" class="prov8">Metro</option>
+			
+						<option value="Kabupaten Bangka" class="prov9">Kabupaten Bangka</option>
+						<option value="Kabupaten Bangka Barat" class="prov9">Kabupaten Bangka Barat</option>
+						<option value="Kabupaten Bangka Selatan" class="prov9">Kabupaten Bangka Selatan</option>
+						<option value="Kabupaten Bangka Tengah" class="prov9">Kabupaten Bangka Tengah</option>
+						<option value="Kabupaten Belitung" class="prov9">Kabupaten Belitung</option>
+						<option value="Kabupaten Belitung Timur" class="prov9">Kabupaten Belitung Timur</option>
+						<option value="Pangkal Pinang" class="prov9">Pangkal Pinang</option>
+			
+						<option value="Kabupaten Bintan" class="prov10">Kabupaten Bintan</option>
+						<option value="Kabupaten Karimun" class="prov10">Kabupaten Karimun</option>
+						<option value="Kabupaten Kepulauan Anambas" class="prov10">Kabupaten Kepulauan Anambas</option>
+						<option value="Kabupaten Lingga" class="prov10">Kabupaten Lingga</option>
+						<option value="Kabupaten Natuna" class="prov10">Kabupaten Natuna</option>
+						<option value="Batam" class="prov10">Batam</option>
+						<option value="Tanjung Pinang" class="prov10">Tanjung Pinang</option>
+			
+						<option value="Kabupaten Adm Kepulauan Seribu" class="prov11">Kabupaten Adm Kepulauan Seribu</option>
+						<option value="Jakarta Barat" class="prov11">Jakarta Barat</option>
+						<option value="Jakarta Pusat" class="prov11">Jakarta Pusat</option>
+						<option value="Jakarta Selatan" class="prov11">Jakarta Selatan</option>
+						<option value="Jakarta Timur" class="prov11">Jakarta Timur</option>
+						<option value="Jakarta Utara" class="prov11">Jakarta Utara</option>
+			
+						<option value="Kabupaten Bandung" class="prov12">Kabupaten Bandung</option>
+						<option value="Kabupaten Bandung Barat" class="prov12">Kabupaten Bandung Barat</option>
+						<option value="Kabupaten Bekasi" class="prov12">Kabupaten Bekasi</option>
+						<option value="Kabupaten Bogor" class="prov12">Kabupaten Bogor</option>
+						<option value="Kabupaten Ciamis" class="prov12">Kabupaten Ciamis</option>
+						<option value="Kabupaten Cianjur" class="prov12">Kabupaten Cianjur</option>
+						<option value="Kabupaten Cirebon" class="prov12">Kabupaten Cirebon</option>
+						<option value="Kabupaten Garut" class="prov12">Kabupaten Garut</option>
+						<option value="Kabupaten Indramayu" class="prov12">Kabupaten Indramayu</option>
+						<option value="Kabupaten Karawang" class="prov12">Kabupaten Karawang</option>
+						<option value="Kabupaten Kuningan" class="prov12">Kabupaten Kuningan</option>
+						<option value="Kabupaten Majalengka" class="prov12">Kabupaten Majalengka</option>
+						<option value="Kabupaten Pangandaran" class="prov12">Kabupaten Pangandaran</option>
+						<option value="Kabupaten Purwakarta" class="prov12">Kabupaten Purwakarta</option>
+						<option value="Kabupaten Subang" class="prov12">Kabupaten Subang</option>
+						<option value="Kabupaten Sukabumi" class="prov12">Kabupaten Sukabumi</option>
+						<option value="Kabupaten Sumedang" class="prov12">Kabupaten Sumedang</option>
+						<option value="Kabupaten Tasikmalaya" class="prov12">Kabupaten Tasikmalaya</option>
+						<option value="Bandung" class="prov12">Bandung</option>
+						<option value="Banjar" class="prov12">Banjar</option>
+						<option value="Bekasi" class="prov12">Bekasi</option>
+						<option value="Bogor" class="prov12">Bogor</option>
+						<option value="Cimahi" class="prov12">Cimahi</option>
+						<option value="Cirebon" class="prov12">Cirebon</option>
+						<option value="Depok" class="prov12">Depok</option>
+						<option value="Sukabumi" class="prov12">Sukabumi</option>
+						<option value="Tasikmalaya" class="prov12">Tasikmalaya</option>
+			
+						<option value="Kabupaten Banjarnegara" class="prov13">Kabupaten Banjarnegara</option>
+						<option value="Kabupaten Banyumas" class="prov13">Kabupaten Banyumas</option>
+						<option value="Kabupaten Batang" class="prov13">Kabupaten Batang</option>
+						<option value="Kabupaten Blora" class="prov13">Kabupaten Blora</option>
+						<option value="Kabupaten Boyolali" class="prov13">Kabupaten Boyolali</option>
+						<option value="Kabupaten Brebes" class="prov13">Kabupaten Brebes</option>
+						<option value="Kabupaten Cilacap" class="prov13">Kabupaten Cilacap</option>
+						<option value="Kabupaten Demak" class="prov13">Kabupaten Demak</option>
+						<option value="Kabupaten Grobogan" class="prov13">Kabupaten Grobogan</option>
+						<option value="Jepara" class="prov13">Jepara</option>
+						<option value="Kabupaten Karanganyar" class="prov13">Kabupaten Karanganyar</option>
+						<option value="Kabupaten Kebumen" class="prov13">Kabupaten Kebumen</option>
+						<option value="Kabupaten Kendal" class="prov13">Kabupaten Kendal</option>
+						<option value="Kabupaten Klaten" class="prov13">Kabupaten Klaten</option>
+						<option value="Kabupaten Kudus" class="prov13">Kabupaten Kudus</option>
+						<option value="Kabupaten Magelang" class="prov13">Kabupaten Magelang</option>
+						<option value="Kabupaten Pati" class="prov13">Kabupaten Pati</option>
+						<option value="Kabupaten Pekalongan" class="prov13">Kabupaten Pekalongan</option>
+						<option value="Kabupaten Pemalang" class="prov13">Kabupaten Pemalang</option>
+						<option value="Kabupaten Purbalingga" class="prov13">Kabupaten Purbalingga</option>
+						<option value="Kabupaten Purworejo" class="prov13">Kabupaten Purworejo</option>
+						<option value="Kabupaten Rembang" class="prov13">Kabupaten Rembang</option>
+						<option value="Kabupaten Semarang" class="prov13">Kabupaten Semarang</option>
+						<option value="Kabupaten Sragen" class="prov13">Kabupaten Sragen</option>
+						<option value="Kabupaten Sukoharjo" class="prov13">Kabupaten Sukoharjo</option>
+						<option value="Kabupaten Tegal" class="prov13">Kabupaten Tegal</option>
+						<option value="Kabupaten Temanggung" class="prov13">Kabupaten Temanggung</option>
+						<option value="Kabupaten Wonogiri" class="prov13">Kabupaten Wonogiri</option>
+						<option value="Kabupaten Wonosobo" class="prov13">Kabupaten Wonosobo</option>
+						<option value="Magelang" class="prov13">Magelang</option>
+						<option value="Pekalongan" class="prov13">Pekalongan</option>
+						<option value="Salatiga" class="prov13">Salatiga</option>
+						<option value="Semarang" class="prov13">Semarang</option>
+						<option value="Surakarta" class="prov13">Surakarta</option>
+						<option value="Tegal" class="prov13">Tegal</option>
+			
+						<option value="Kabupaten Bantul" class="prov14">Kabupaten Bantul</option>
+						<option value="Kabupaten Gunung Kidul" class="prov14">Kabupaten Gunung Kidul</option>
+						<option value="Kabupaten Kulon Progo" class="prov14">Kabupaten Kulon Progo</option>
+						<option value="Kabupaten Sleman" class="prov14">Kabupaten Sleman</option>
+						<option value="Yogyakarta" class="prov14">Yogyakarta</option>
+			
+						<option value="Kabupaten Bangkalan" class="prov15">Kabupaten Bangkalan</option>
+						<option value="Kabupaten Banyuwangi" class="prov15">Kabupaten Banyuwangi</option>
+						<option value="Kabupaten Blitar" class="prov15">Kabupaten Blitar</option>
+						<option value="Kabupaten Bojonegoro" class="prov15">Kabupaten Bojonegoro</option>
+						<option value="Kabupaten Bondowoso" class="prov15">Kabupaten Bondowoso</option>
+						<option value="Kabupaten Gresik" class="prov15">Kabupaten Gresik</option>
+						<option value="Kabupaten Jember" class="prov15">Kabupaten Jember</option>
+						<option value="Kabupaten Jombang" class="prov15">Kabupaten Jombang</option>
+						<option value="Kabupaten Kediri" class="prov15">Kabupaten Kediri</option>
+						<option value="Kabupaten Lamongan" class="prov15">Kabupaten Lamongan</option>
+						<option value="Kabupaten Lumajang" class="prov15">Kabupaten Lumajang</option>
+						<option value="Kabupaten Madiun" class="prov15">Kabupaten Madiun</option>
+						<option value="Kabupaten Magetan" class="prov15">Kabupaten Magetan</option>
+						<option value="Kabupaten Malang" class="prov15">Kabupaten Malang</option>
+						<option value="Kabupaten Mojokerto" class="prov15">Kabupaten Mojokerto</option>
+						<option value="Kabupaten Nganjuk" class="prov15">Kabupaten Nganjuk</option>
+						<option value="Kabupaten Ngawi" class="prov15">Kabupaten Ngawi</option>
+						<option value="Kabupaten Pacitan" class="prov15">Kabupaten Pacitan</option>
+						<option value="Kabupaten Pamekasan" class="prov15">Kabupaten Pamekasan</option>
+						<option value="Kabupaten Pasuruan" class="prov15">Kabupaten Pasuruan</option>
+						<option value="Kabupaten Ponorogo" class="prov15">Kabupaten Ponorogo</option>
+						<option value="Kabupaten Probolinggo" class="prov15">Kabupaten Probolinggo</option>
+						<option value="Kabupaten Sampang" class="prov15">Kabupaten Sampang</option>
+						<option value="Kabupaten Sidoarjo" class="prov15">Kabupaten Sidoarjo</option>
+						<option value="Kabupaten Situbondo" class="prov15">Kabupaten Situbondo</option>
+						<option value="Kabupaten Sumenep" class="prov15">Kabupaten Sumenep</option>
+						<option value="Kabupaten Trenggalek" class="prov15">Kabupaten Trenggalek</option>
+						<option value="Kabupaten Tuban" class="prov15">Kabupaten Tuban</option>
+						<option value="Kabupaten Tulungagung" class="prov15">Kabupaten Tulungagung</option>
+						<option value="Batu" class="prov15">Batu</option>
+						<option value="Blitar" class="prov15">Blitar</option>
+						<option value="Kediri" class="prov15">Kediri</option>
+						<option value="Madiun" class="prov15">Madiun</option>
+						<option value="Malang" class="prov15">Malang</option>
+						<option value="Mojokerto" class="prov15">Mojokerto</option>
+						<option value="Pasuruan" class="prov15">Pasuruan</option>
+						<option value="Probolinggo" class="prov15">Probolinggo</option>
+						<option value="Surabaya" class="prov15">Surabaya</option>
+			
+						<option value="Kabupaten Tangerang" class="prov16">Kabupaten Tangerang</option>
+						<option value="Kabupaten Serang" class="prov16">Kabupaten Serang</option>
+						<option value="Kabupaten Lebak" class="prov16">Kabupaten Lebak</option>
+						<option value="Kabupaten Pandeglang" class="prov16">Kabupaten Pandeglang</option>
+						<option value="Tangerang" class="prov16">Tangerang</option>
+						<option value="Serang" class="prov16">Serang</option>
+						<option value="Cilegon" class="prov16">Cilegon</option>
+						<option value="Tangerang Selatan" class="prov16">Tangerang Selatan</option>
+			
+						<option value="Kabupaten Badung" class="prov17">Kabupaten Badung</option>
+						<option value="Kabupaten Bangli" class="prov17">Kabupaten Bangli</option>
+						<option value="Kabupaten Buleleng" class="prov17">Kabupaten Buleleng</option>
+						<option value="Kabupaten Gianyar" class="prov17">Kabupaten Gianyar</option>
+						<option value="Kabupaten Jembrana" class="prov17">Kabupaten Jembrana</option>
+						<option value="Kabupaten Karangasem" class="prov17">Kabupaten Karangasem</option>
+						<option value="Kabupaten Klungkung" class="prov17">Kabupaten Klungkung</option>
+						<option value="Kabupaten Tabanan" class="prov17">Kabupaten Tabanan</option>
+						<option value="Denpasar" class="prov17">Denpasar</option>
+			
+						<option value="Kabupaten Bima" class="prov18">Kabupaten Bima</option>
+						<option value="Kabupaten Dompu" class="prov18">Kabupaten Dompu</option>
+						<option value="Kabupaten Lombok Barat" class="prov18">Kabupaten Lombok Barat</option>
+						<option value="Kabupaten Lombok Tengah" class="prov18">Kabupaten Lombok Tengah</option>
+						<option value="Kabupaten Lombok Timur" class="prov18">Kabupaten Lombok Timur</option>
+						<option value="Kabupaten Lombok Utara" class="prov18">Kabupaten Lombok Utara</option>
+						<option value="Kabupaten Sumbawa" class="prov18">Kabupaten Sumbawa</option>
+						<option value="Kabupaten Sumbawa Barat" class="prov18">Kabupaten Sumbawa Barat</option>
+						<option value="Bima" class="prov18">Bima</option>
+						<option value="Mataram" class="prov18">Mataram</option>
+			
+						<option value="Kabupaten Alor" class="prov19">Kabupaten Alor</option>
+						<option value="Kabupaten Belu" class="prov19">Kabupaten Belu</option>
+						<option value="Kabupaten Ende" class="prov19">Kabupaten Ende</option>
+						<option value="Kabupaten Flores Timur" class="prov19">Kabupaten Flores Timur</option>
+						<option value="Kabupaten Kupang" class="prov19">Kabupaten Kupang</option>
+						<option value="Kabupaten Lembata" class="prov19">Kabupaten Lembata</option>
+						<option value="Kabupaten Manggarai" class="prov19">Kabupaten Manggarai</option>
+						<option value="Kabupaten Manggarai Barat" class="prov19">Kabupaten Manggarai Barat</option>
+						<option value="Kabupaten Manggarai Timur" class="prov19">Kabupaten Manggarai Timur</option>
+						<option value="Kabupaten Ngada" class="prov19">Kabupaten Ngada</option>
+						<option value="Kabupaten Nagekeo" class="prov19">Kabupaten Nagekeo</option>
+						<option value="Kabupaten Rote Ndao" class="prov19">Kabupaten Rote Ndao</option>
+						<option value="Kabupaten Sabu Raijua" class="prov19">Kabupaten Sabu Raijua</option>
+						<option value="Kabupaten Sikka" class="prov19">Kabupaten Sikka</option>
+						<option value="Kabupaten Sumba Barat" class="prov19">Kabupaten Sumba Barat</option>
+						<option value="Kabupaten Sumba Barat Daya" class="prov19">Kabupaten Sumba Barat Daya</option>
+						<option value="Kabupaten Sumba Tengah" class="prov19">Kabupaten Sumba Tengah</option>
+						<option value="Kabupaten Sumba Timur" class="prov19">Kabupaten Sumba Timur</option>
+						<option value="Kabupaten Timor Tengah Selatan" class="prov19">Kabupaten Timor Tengah Selatan</option>
+						<option value="Kabupaten Timor Tengah Utara" class="prov19">Kabupaten Timor Tengah Utara</option>
+						<option value="Kupang" class="prov19">Kupang</option>
+						<option value="Kabupaten Malaka" class="prov19">Kabupaten Malaka</option>
+			
+						<option value="Kabupaten Bengkayang" class="prov20">Kabupaten Bengkayang</option>
+						<option value="Kabupaten Kapuas Hulu" class="prov20">Kabupaten Kapuas Hulu</option>
+						<option value="Kabupaten Kayong Utara" class="prov20">Kabupaten Kayong Utara</option>
+						<option value="Kabupaten Ketapang" class="prov20">Kabupaten Ketapang</option>
+						<option value="Kabupaten Kubu Raya" class="prov20">Kabupaten Kubu Raya</option>
+						<option value="Kabupaten Landak" class="prov20">Kabupaten Landak</option>
+						<option value="Kabupaten Melawi" class="prov20">Kabupaten Melawi</option>
+						<option value="Kabupaten Pontianak" class="prov20">Kabupaten Pontianak</option>
+						<option value="Kabupaten Sambas" class="prov20">Kabupaten Sambas</option>
+						<option value="Kabupaten Sanggau" class="prov20">Kabupaten Sanggau</option>
+						<option value="Kabupaten Sekadau" class="prov20">Kabupaten Sekadau</option>
+						<option value="Kabupaten Sintang" class="prov20">Kabupaten Sintang</option>
+						<option value="Pontianak" class="prov20">Pontianak</option>
+						<option value="Singkawang" class="prov20">Singkawang</option>
+			
+						<option value="Kabupaten Barito Selatan" class="prov21">Kabupaten Barito Selatan</option>
+						<option value="Kabupaten Barito Timur" class="prov21">Kabupaten Barito Timur</option>
+						<option value="Kabupaten Barito Utara" class="prov21">Kabupaten Barito Utara</option>
+						<option value="Kabupaten Gunung Mas" class="prov21">Kabupaten Gunung Mas</option>
+						<option value="Kabupaten Kapuas" class="prov21">Kabupaten Kapuas</option>
+						<option value="Kabupaten Katingan" class="prov21">Kabupaten Katingan</option>
+						<option value="Kabupaten Kotawaringin Barat" class="prov21">Kabupaten Kotawaringin Barat</option>
+						<option value="Kabupaten Kotawaringin Timur" class="prov21">Kabupaten Kotawaringin Timur</option>
+						<option value="Kabupaten Lamandau" class="prov21">Kabupaten Lamandau</option>
+						<option value="Kabupaten Murung Raya" class="prov21">Kabupaten Murung Raya</option>
+						<option value="Kabupaten Pulang Pisau" class="prov21">Kabupaten Pulang Pisau</option>
+						<option value="Kabupaten Sukamara" class="prov21">Kabupaten Sukamara</option>
+						<option value="Kabupaten Seruyan" class="prov21">Kabupaten Seruyan</option>
+						<option value="Palangka Raya" class="prov21">Palangka Raya</option>
+			
+						<option value="Kabupaten Balangan" class="prov22">Kabupaten Balangan</option>
+						<option value="Kabupaten Banjar" class="prov22">Kabupaten Banjar</option>
+						<option value="Kabupaten Barito Kuala" class="prov22">Kabupaten Barito Kuala</option>
+						<option value="Kabupaten Hulu Sungai Selatan" class="prov22">Kabupaten Hulu Sungai Selatan</option>
+						<option value="Kabupaten Hulu Sungai Tengah" class="prov22">Kabupaten Hulu Sungai Tengah</option>
+						<option value="Kabupaten Hulu Sungai Utara" class="prov22">Kabupaten Hulu Sungai Utara</option>
+						<option value="Kabupaten Kotabaru" class="prov22">Kabupaten Kotabaru</option>
+						<option value="Kabupaten Tabalong" class="prov22">Kabupaten Tabalong</option>
+						<option value="Kabupaten Tanah Bumbu" class="prov22">Kabupaten Tanah Bumbu</option>
+						<option value="Kabupaten Tanah Laut" class="prov22">Kabupaten Tanah Laut</option>
+						<option value="Kabupaten Tapin" class="prov22">Kabupaten Tapin</option>
+						<option value="Banjarbaru" class="prov22">Banjarbaru</option>
+						<option value="Banjarmasin" class="prov22">Banjarmasin</option>
+			
+						<option value="Kabupaten Berau" class="prov23">Kabupaten Berau</option>
+						<option value="Kabupaten Kutai Barat" class="prov23">Kabupaten Kutai Barat</option>
+						<option value="Kabupaten Kutai Kartanegara" class="prov23">Kabupaten Kutai Kartanegara</option>
+						<option value="Kabupaten Kutai Timur" class="prov23">Kabupaten Kutai Timur</option>
+						<option value="Kabupaten Paser" class="prov23">Kabupaten Paser</option>
+						<option value="Kabupaten Penajam Paser Utara" class="prov23">Kabupaten Penajam Paser Utara</option>
+						<option value="Balikpapan" class="prov23">Balikpapan</option>
+						<option value="Bontang" class="prov23">Bontang</option>
+						<option value="Samarinda" class="prov23">Samarinda</option>
+						<option value="Kabupaten Mahakam Ulu" class="prov23">Kabupaten Mahakam Ulu</option>
+			
+						<option value="Kabupaten Bulungan" class="prov34">Kabupaten Bulungan</option>
+						<option value="Kabupaten Malinau" class="prov34">Kabupaten Malinau</option>
+						<option value="Kabupaten Nunukan" class="prov34">Kabupaten Nunukan</option>
+						<option value="Kabupaten Tana Tidung" class="prov34">Kabupaten Tana Tidung</option>
+						<option value="Tarakan" class="prov34">Tarakan</option>
+			
+						<option value="Kabupaten Bolaang Mongondow" class="prov24">Kabupaten Bolaang Mongondow</option>
+						<option value="Kabupaten Bolaang Mongondow Selatan" class="prov24">Kabupaten Bolaang Mongondow Selatan</option>
+						<option value="Kabupaten Bolaang Mongondow Timur" class="prov24">Kabupaten Bolaang Mongondow Timur</option>
+						<option value="Kabupaten Bolaang Mongondow Utara" class="prov24">Kabupaten Bolaang Mongondow Utara</option>
+						<option value="Kabupaten Kepulauan Sangihe" class="prov24">Kabupaten Kepulauan Sangihe</option>
+						<option value="Kabupaten Kepulauan Siau Tagulandang Biaro" class="prov24">Kabupaten Kepulauan Siau Tagulandang Biaro</option>
+						<option value="Kabupaten Kepulauan Talaud" class="prov24">Kabupaten Kepulauan Talaud</option>
+						<option value="Kabupaten Minahasa" class="prov24">Kabupaten Minahasa</option>
+						<option value="Kabupaten Minahasa Selatan" class="prov24">Kabupaten Minahasa Selatan</option>
+						<option value="Kabupaten Minahasa Tenggara" class="prov24">Kabupaten Minahasa Tenggara</option>
+						<option value="Kabupaten Minahasa Utara" class="prov24">Kabupaten Minahasa Utara</option>
+						<option value="Bitung" class="prov24">Bitung</option>
+						<option value="Kotamobagu" class="prov24">Kotamobagu</option>
+						<option value="Manado" class="prov24">Manado</option>
+						<option value="Tomohon" class="prov24">Tomohon</option>
+			
+						<option value="Kabupaten Banggai" class="prov25">Kabupaten Banggai</option>
+						<option value="Kabupaten Banggai Kepulauan" class="prov25">Kabupaten Banggai Kepulauan</option>
+						<option value="Kabupaten Buol" class="prov25">Kabupaten Buol</option>
+						<option value="Kabupaten Donggala" class="prov25">Kabupaten Donggala</option>
+						<option value="Kabupaten Morowali" class="prov25">Kabupaten Morowali</option>
+						<option value="Kabupaten Parigi Moutong" class="prov25">Kabupaten Parigi Moutong</option>
+						<option value="Kabupaten Poso" class="prov25">Kabupaten Poso</option>
+						<option value="Kabupaten Tojo Una-Una" class="prov25">Kabupaten Tojo Una-Una</option>
+						<option value="Kabupaten Toli-Toli" class="prov25">Kabupaten Toli-Toli</option>
+						<option value="Kabupaten Sigi" class="prov25">Kabupaten Sigi</option>
+						<option value="Palu" class="prov25">Palu</option>
+						<option value="Kabupaten Banggai Laut" class="prov25">Kabupaten Banggai Laut</option>
+			
+						<option value="Kabupaten Bantaeng" class="prov26">Kabupaten Bantaeng</option>
+						<option value="Kabupaten Barru" class="prov26">Kabupaten Barru</option>
+						<option value="Kabupaten Bone" class="prov26">Kabupaten Bone</option>
+						<option value="Kabupaten Bulukumba" class="prov26">Kabupaten Bulukumba</option>
+						<option value="Kabupaten Enrekang" class="prov26">Kabupaten Enrekang</option>
+						<option value="Kabupaten Gowa" class="prov26">Kabupaten Gowa</option>
+						<option value="Kabupaten Jeneponto" class="prov26">Kabupaten Jeneponto</option>
+						<option value="Kabupaten Kepulauan Selayar" class="prov26">Kabupaten Kepulauan Selayar</option>
+						<option value="Kabupaten Luwu" class="prov26">Kabupaten Luwu</option>
+						<option value="Kabupaten Luwu Timur" class="prov26">Kabupaten Luwu Timur</option>
+						<option value="Kabupaten Luwu Utara" class="prov26">Kabupaten Luwu Utara</option>
+						<option value="Kabupaten Maros" class="prov26">Kabupaten Maros</option>
+						<option value="Kabupaten Pangkajene dan Kepulauan" class="prov26">Kabupaten Pangkajene dan Kepulauan</option>
+						<option value="Kabupaten Pinrang" class="prov26">Kabupaten Pinrang</option>
+						<option value="Kabupaten Sidenreng Rappang" class="prov26">Kabupaten Sidenreng Rappang</option>
+						<option value="Kabupaten Sinjai" class="prov26">Kabupaten Sinjai</option>
+						<option value="Kabupaten Soppeng" class="prov26">Kabupaten Soppeng</option>
+						<option value="Kabupaten Takalar" class="prov26">Kabupaten Takalar</option>
+						<option value="Kabupaten Tana Toraja" class="prov26">Kabupaten Tana Toraja</option>
+						<option value="Kabupaten Toraja Utara" class="prov26">Kabupaten Toraja Utara</option>
+						<option value="Kabupaten Wajo" class="prov26">Kabupaten Wajo</option>
+						<option value="Makassar" class="prov26">Makassar</option>
+						<option value="Palopo" class="prov26">Palopo</option>
+						<option value="Parepare" class="prov26">Parepare</option>
+			
+						<option value="Kabupaten Bombana" class="prov27">Kabupaten Bombana</option>
+						<option value="Kabupaten Buton" class="prov27">Kabupaten Buton</option>
+						<option value="Kabupaten Buton Utara" class="prov27">Kabupaten Buton Utara</option>
+						<option value="Kabupaten Kolaka" class="prov27">Kabupaten Kolaka</option>
+						<option value="Kabupaten Kolaka Utara" class="prov27">Kabupaten Kolaka Utara</option>
+						<option value="Kabupaten Konawe" class="prov27">Kabupaten Konawe</option>
+						<option value="Kabupaten Konawe Selatan" class="prov27">Kabupaten Konawe Selatan</option>
+						<option value="Kabupaten Konawe Utara" class="prov27">Kabupaten Konawe Utara</option>
+						<option value="Kabupaten Muna" class="prov27">Kabupaten Muna</option>
+						<option value="Kabupaten Wakatobi" class="prov27">Kabupaten Wakatobi</option>
+						<option value="Bau-Bau" class="prov27">Bau-Bau</option>
+						<option value="Kendari" class="prov27">Kendari</option>
+						<option value="Kabupaten Kolaka Timur" class="prov27">Kabupaten Kolaka Timur</option>
+			
+						<option value="Kabupaten Boalemo" class="prov28">Kabupaten Boalemo</option>
+						<option value="Kabupaten Bone Bolango" class="prov28">Kabupaten Bone Bolango</option>
+						<option value="Kabupaten Gorontalo" class="prov28">Kabupaten Gorontalo</option>
+						<option value="Kabupaten Gorontalo Utara" class="prov28">Kabupaten Gorontalo Utara</option>
+						<option value="Kabupaten Pohuwato" class="prov28">Kabupaten Pohuwato</option>
+						<option value="Gorontalo" class="prov28">Gorontalo</option>
+			
+						<option value="Kabupaten Majene" class="prov29">Kabupaten Majene</option>
+						<option value="Kabupaten Mamasa" class="prov29">Kabupaten Mamasa</option>
+						<option value="Kabupaten Mamuju" class="prov29">Kabupaten Mamuju</option>
+						<option value="Kabupaten Mamuju Utara" class="prov29">Kabupaten Mamuju Utara</option>
+						<option value="Kabupaten Polewali Mandar" class="prov29">Kabupaten Polewali Mandar</option>
+						<option value="Kabupaten Mamuju Tengah" class="prov29">Kabupaten Mamuju Tengah</option>
+			
+						<option value="Kabupaten Buru" class="prov30">Kabupaten Buru</option>
+						<option value="Kabupaten Buru Selatan" class="prov30">Kabupaten Buru Selatan</option>
+						<option value="Kabupaten Kepulauan Aru" class="prov30">Kabupaten Kepulauan Aru</option>
+						<option value="Kabupaten Maluku Barat Daya" class="prov30">Kabupaten Maluku Barat Daya</option>
+						<option value="Kabupaten Maluku Tengah" class="prov30">Kabupaten Maluku Tengah</option>
+						<option value="Kabupaten Maluku Tenggara" class="prov30">Kabupaten Maluku Tenggara</option>
+						<option value="Kabupaten Maluku Tenggara Barat" class="prov30">Kabupaten Maluku Tenggara Barat</option>
+						<option value="Kabupaten Seram Bagian Barat" class="prov30">Kabupaten Seram Bagian Barat</option>
+						<option value="Kabupaten Seram Bagian Timur" class="prov30">Kabupaten Seram Bagian Timur</option>
+						<option value="Ambon" class="prov30">Ambon</option>
+						<option value="Tual" class="prov30">Tual</option>
+			
+						<option value="Kabupaten Halmahera Barat" class="prov31">Kabupaten Halmahera Barat</option>
+						<option value="Kabupaten Halmahera Tengah" class="prov31">Kabupaten Halmahera Tengah</option>
+						<option value="Kabupaten Halmahera Utara" class="prov31">Kabupaten Halmahera Utara</option>
+						<option value="Kabupaten Halmahera Selatan" class="prov31">Kabupaten Halmahera Selatan</option>
+						<option value="Kabupaten Kepulauan Sula" class="prov31">Kabupaten Kepulauan Sula</option>
+						<option value="Kabupaten Halmahera Timur" class="prov31">Kabupaten Halmahera Timur</option>
+						<option value="Kabupaten Pulau Morotai" class="prov31">Kabupaten Pulau Morotai</option>
+						<option value="Ternate" class="prov31">Ternate</option>
+						<option value="Tidore Kepulauan" class="prov31">Tidore Kepulauan</option>
+						<option value="Kabupaten Pulau Taliabu" class="prov31">Kabupaten Pulau Taliabu</option>
+			
+						<option value="Kabupaten Asmat" class="prov32">Kabupaten Asmat</option>
+						<option value="Kabupaten Biak Numfor" class="prov32">Kabupaten Biak Numfor</option>
+						<option value="Kabupaten Boven Digoel" class="prov32">Kabupaten Boven Digoel</option>
+						<option value="Kabupaten Deiyai" class="prov32">Kabupaten Deiyai</option>
+						<option value="Kabupaten Dogiyai" class="prov32">Kabupaten Dogiyai</option>
+						<option value="Kabupaten Intan Jaya" class="prov32">Kabupaten Intan Jaya</option>
+						<option value="Kabupaten Jayapura" class="prov32">Kabupaten Jayapura</option>
+						<option value="Kabupaten Jayawijaya" class="prov32">Kabupaten Jayawijaya</option>
+						<option value="Kabupaten Keerom" class="prov32">Kabupaten Keerom</option>
+						<option value="Kabupaten Kepulauan Yapen" class="prov32">Kabupaten Kepulauan Yapen</option>
+						<option value="Kabupaten Lanny Jaya" class="prov32">Kabupaten Lanny Jaya</option>
+						<option value="Kabupaten Mamberamo Raya" class="prov32">Kabupaten Mamberamo Raya</option>
+						<option value="Kabupaten Mamberamo Tengah" class="prov32">Kabupaten Mamberamo Tengah</option>
+						<option value="Kabupaten Mappi" class="prov32">Kabupaten Mappi</option>
+						<option value="Kabupaten Merauke" class="prov32">Kabupaten Merauke</option>
+						<option value="Kabupaten Mimika" class="prov32">Kabupaten Mimika</option>
+						<option value="Kabupaten Nabire" class="prov32">Kabupaten Nabire</option>
+						<option value="Kabupaten Nduga" class="prov32">Kabupaten Nduga</option>
+						<option value="Kabupaten Paniai" class="prov32">Kabupaten Paniai</option>
+						<option value="Kabupaten Pegunungan Bintang" class="prov32">Kabupaten Pegunungan Bintang</option>
+						<option value="Kabupaten Puncak" class="prov32">Kabupaten Puncak</option>
+						<option value="Kabupaten Puncak Jaya" class="prov32">Kabupaten Puncak Jaya</option>
+						<option value="Kabupaten Sarmi" class="prov32">Kabupaten Sarmi</option>
+						<option value="Kabupaten Supiori" class="prov32">Kabupaten Supiori</option>
+						<option value="Kabupaten Tolikara" class="prov32">Kabupaten Tolikara</option>
+						<option value="Kabupaten Waropen" class="prov32">Kabupaten Waropen</option>
+						<option value="Kabupaten Yahukimo" class="prov32">Kabupaten Yahukimo</option>
+						<option value="Kabupaten Yalimo" class="prov32">Kabupaten Yalimo</option>
+						<option value="Jayapura" class="prov32">Jayapura</option>
+			
+						<option value="Kabupaten Fakfak" class="prov33">Kabupaten Fakfak</option>
+						<option value="Kabupaten Kaimana" class="prov33">Kabupaten Kaimana</option>
+						<option value="Kabupaten Manokwari" class="prov33">Kabupaten Manokwari</option>
+						<option value="Kabupaten Manokwari Selatan" class="prov33">Kabupaten Manokwari Selatan</option>
+						<option value="Kabupaten Maybrat" class="prov33">Kabupaten Maybrat</option>
+						<option value="Kabupaten Pegunungan Arfak" class="prov33">Kabupaten Pegunungan Arfak</option>
+						<option value="Kabupaten Raja Ampat" class="prov33">Kabupaten Raja Ampat</option>
+						<option value="Kabupaten Sorong" class="prov33">Kabupaten Sorong</option>
+						<option value="Kabupaten Sorong Selatan" class="prov33">Kabupaten Sorong Selatan</option>
+						<option value="Kabupaten Tambrauw" class="prov33">Kabupaten Tambrauw</option>
+						<option value="Kabupaten Teluk Bintuni" class="prov33">Kabupaten Teluk Bintuni</option>
+						<option value="Kabupaten Teluk Wondama" class="prov33">Kabupaten Teluk Wondama</option>
+						<option value="Sorong" class="prov33">Sorong</option>
+					</select><!--select-->
+					 
+					
+					<input type="submit" value="Kirim" />
+				
+					</form>
+				</div>
+				<div class="eight columns">
+					<h4>Apakah e-KTP Anda sudah terdaftar?</h4>
+					<ol>
+					<li>Masukkan data-data Anda pada formulir di samping kiri. </li>
+					<li>Kemudian klik tombol "Kirim" untuk mulai melakukan pengecekan data.</li>
+					</ol>
+					
+					<img src="images/ektpbg.jpg" alt="E-ktp, gambar eKTP"/>
+				</div>
+			</div>
+			<p style="background:#fffeeb;color:#767676;padding:5px;border:1px solid #ce9a0f">Jika data Anda tidak keluar, berarti Anda belum terdaftar atau e-KTP Anda sudah rusak chipnya</p>
+		</div>
+	
+	<!--//-->
+	<div id="result" style="display:none;">
+		<div style="height:280px;width:434px;margin:10px auto 50px;background:url(images/loading.gif) no-repeat center center">
+			<div style="width:434px;" id="canvas"></div>
+		</div>
+		<p id="thanks" style="display:none;text-align:center">
+		Terimakasih Anda telah menggunakan aplikasi e-KTP online. Jangan lupa beritahu teman-teman Anda juga ya :) <br/>
+		Web ini hanya untuk lucu-lucuan aja. Tidak bermaksud menyinggung siapapun dan data yang diinput tidak akan direcord. <br/><img src="images/ngakak.gif" alt=""/><br/>
+		
+		</p>
+		<p style="text-align:center">
+		<input class="reset" type="button" value="Cek KTP lainnya"/>
+		</p>
+		
+		
+	</div>
+	
+	<!--ads bottom-->
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3108107609212063";
+/* cektkp-ektp-footer */
+google_ad_slot = "7531829776";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	
+		 <ul class="quick-links">
+		  <li class="fb-btn">
+		  <fb:like layout="button_count" send="false" href="https://www.facebook.com/cektkpdotcom"></fb:like>
+		  </li>
+		  <li class="tweet-btn">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ektp.cektkp.com" data-count="horizontal" data-via="cektkp" data-related="cektkp:Creator of cektkp">Tweet</a>
+		  </li>
+		  <li class="gplus-btn">
+			<g:plusone url="http://ektp.cektkp.com" size="medium"></g:plusone>
+		   </li>
+		   <li class="follow-btn">
+			<a href="https://twitter.com/cektkp" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="false">Follow @cektkp</a>
+		  </li>
+		</ul><!--quick-links-->
+	<div id="footer">
+		Copyright &copy; 2013 <a href="http://cektkp.com">cektkp.com</a>
+	</div>
+	</div><!--container-->
+
+
+	 <script src="//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js"></script>
+	<!--<script src="js/kinetic-v4.5.4.min.js"></script>-->
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('#provinsi').change(function() {
+			$('#kotakab option:not(.default)').hide();
+			$('#kotakab option.default').prop('selected',true);
+				$(this).find("option:selected").each(function () {
+					var prov = $(this).data().prov;
+					$('#kotakab option.'+prov).show();
+				});
+			});
+		
+			$('#form').submit(function() {
+				var form_value = $(this).serialize();
+					window.location.hash = base64.encode(form_value);
+				return false;
+			});
+			$('.reset').click(function (e) {
+				$('#result').hide();
+				$('#form-wrap').slideDown();
+				window.location.hash = '';
+				document.getElementById('form').reset();
+				e.preventDefault();
+			});
+			
+			$(window).bind('hashchange', function() {
+				var hash = window.location.hash.replace(/^#/,'');
+				var query = URLToArray(base64.decode(hash));
+				var nik = str_shuffle('32023922058600014471982000345678990988764567890987650000').substr(1,16);
+				query.nik = nik;
+				query.ttl = '10-12-1988';
+				
+				var stage = new Kinetic.Stage({
+							container: 'canvas',
+							width: 434,
+							height: 280
+						  });
+						  var layer = new Kinetic.Layer();
+						  
+						  var header1 = new Kinetic.Text({
+							x: stage.getWidth() / 2,
+							y: 10,
+							text: "PROVINSI "+query.provinsi.toUpperCase(),
+							fontSize: 16,
+							fontFamily: 'Arial',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+
+						  header1.setOffset({
+							x: header1.getWidth() / 2
+						  });
+						  
+						  var header2 = new Kinetic.Text({
+							x: stage.getWidth() / 2,
+							y: 25,
+							text: query.kotakab.toUpperCase(),
+							fontSize: 16,
+							fontFamily: 'Arial',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+
+						  header2.setOffset({
+							x: header2.getWidth() / 2
+						  });
+							
+						  var nik = new Kinetic.Text({
+							x: 100,
+							y: 47,
+							text: query.nik,
+							fontSize: 18,
+							fontFamily: 'Courier New',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+						  
+						  var nama = new Kinetic.Text({
+							x: 116,
+							y: 73,
+							text: query.nama.toUpperCase(),
+							fontSize: 11,
+							fontFamily: 'Arial',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+						  var ttl = new Kinetic.Text({
+							x: 208,
+							y: 85,
+							text: query.ttl,
+							fontSize: 11,
+							fontFamily: 'Arial',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+						  var jk = new Kinetic.Text({
+							x: 116,
+							y: 99,
+							text: query.jk.toUpperCase(),
+							fontSize: 11,
+							fontFamily: 'Arial',
+							fill: '#3e3e3e',
+							fontStyle:'bold'
+						  });
+
+						   //img
+						  var imageObj = new Image();
+						  imageObj.onload = function() {
+							var bg = new Kinetic.Image({
+							  x: 0,
+							  y: 0,
+							  image: imageObj,
+							  width: 434,
+							  height: 280
+							});
+
+							layer.add(bg);
+							layer.add(header1);
+							layer.add(header2);
+							layer.add(nik);
+							layer.add(nama);
+							layer.add(ttl);
+							layer.add(jk);
+							stage.add(layer);
+							document.getElementById('thanks').style.display = 'block';
+						  };
+						  imageObj.src = 'ektp.jpg';
+				//kinet
+				$('#result').show();
+				$('#form-wrap').slideUp();
+			});
+		});
+		
+	</script>
+
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=394280927787";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+  </body>
+</html>
